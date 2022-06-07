@@ -1,4 +1,4 @@
-$assetPath: '../images/map.png';
+$imgPath: "../images/";
 
 .location {
 width: 40px;
@@ -39,9 +39,12 @@ color: #2B283A;
       padding-top: 10px;
       .place_info_up {
         display: flex;
-        align-items: baseline;
-        .map {
-          background: url("#{$assetPath}");
+        align-items: center;
+        img {
+   
+          height: 14px;
+          width: 14px;
+         
           
         }
         a {

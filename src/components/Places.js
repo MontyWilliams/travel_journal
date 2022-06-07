@@ -1,6 +1,6 @@
 import react from 'react';
 import '../styles/Places.css'
-
+import map from '../images/map.png'
 
 export default function Places(props) {
 
@@ -12,7 +12,7 @@ export default function Places(props) {
         </div>
         <div className="place_R">
         <div className="place_info_up">
-            <span className="map"></span>
+            <img src={map} alt=""  className="map"/>
             <span className="location">{props.location}</span>
             <a href={props.googleMapsUrl}>View on Google Maps</a>
         </div>
