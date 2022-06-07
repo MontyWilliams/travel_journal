@@ -1,3 +1,4 @@
+$assetPath: '../images/map.png';
 
 .location {
 width: 40px;
@@ -11,14 +12,13 @@ font-weight: 400;
 font-size: 10.24px;
 line-height: 12px;
 letter-spacing: 0.17em;
-
 color: #2B283A;
-
 }
 
 
 .place_info {
-  padding: 44px;
+  // padding-top: 20px;
+  padding-top: 44px;
   display: flex;
   
   .place_L {
@@ -36,14 +36,80 @@ color: #2B283A;
   }
 
     .place_R {
+      padding-top: 10px;
       .place_info_up {
-       display: flex;
+        display: flex;
+        align-items: baseline;
+        .map {
+          background: url("#{$assetPath}");
+          
+        }
+        a {
+          width: 319px;
+height: 11px;
+left: 184px;
+top: 183px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 10.24px;
+line-height: 12px;
+
+color: #2B283A;
+        }
+
        * {
-         flex-basis: content;
+         flex-basis: content; 
           padding: 5px;
         }
         
       }
+
+      .place_info_mid {
+padding-bottom: 5px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 10.24px;
+line-height: 12px;
+color: #2B283A;
+
+
+* {
+  flex-basis: content; 
+   padding: 5px;
+ }
+      }
+              .proptitle {
+                width: 326px;
+                height: 40px;
+                left: 184px;
+                top: 136px;
+                
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 30px;
+                
+                color: #2B283A;;
+              }
+              .place_info_lower {
+                width: 319px;
+height: 11px;
+left: 184px;
+top: 183px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 10.24px;
+line-height: 12px;
+
+color: #2B283A;
+
+              }
     }
  
 

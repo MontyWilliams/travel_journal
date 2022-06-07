@@ -1,6 +1,6 @@
 import react from 'react'
 import '../styles/Nav.css'
-import icon from "./soc.jpg"
+import icon from "./logo.png"
 import Places from '../components/Places'
 
 export default function Nav() {
