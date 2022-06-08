@@ -1,5 +1,6 @@
 import './App.css';
 import Nav from './components/Nav'
+import Footer from './components/Footer'
 import Places from './components/Places'
 import data from './data'
 
@@ -24,6 +25,7 @@ function App() {
     <div className="container">
             <Nav />
              {location}
+             <Footer />
     </div>
     </div>
   );
