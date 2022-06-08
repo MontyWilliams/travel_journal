@@ -20,9 +20,11 @@ function App() {
   })
 
   return (
+    <div className="containerB">
     <div className="container">
             <Nav />
              {location}
+    </div>
     </div>
   );
 }

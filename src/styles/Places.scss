@@ -1,6 +1,28 @@
 $imgPath: "../images/";
+.containerB {
+  position: absolute;
+  top: 50%;
+  margin-top: -200px;
+  /* Half of #content height */
+  left: 0;
+  width: 100%;
 
+.container{
+  
+ 
+  
+
+    // width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    // height: 100%;
+    height: inherit;
+    border: 1px solid #000000;
+  
+  
 .location {
+
+  
 width: 40px;
 height: 10px;
 left: 195px;
@@ -17,6 +39,21 @@ color: #2B283A;
 
 
 .place_info {
+
+  &:hover {
+    .place_img {
+       box-shadow:
+    inset 0 0 50px rgb(0, 0, 0),      /* inner white */
+    inset 20px 0 80px rgba(0, 255, 255, 0.075),   /* inner left magenta short */
+    inset -20px 0 80px rgba(3, 51, 51, 0.075),  /* inner right cyan short */
+    inset 20px 0 300px rgba(54, 5, 54, 0.116),  /* inner left magenta broad */
+    inset -20px 0 300px rgba(3, 31, 31, 0.158), /* inner right cyan broad */
+    0 0 50px rgba(255, 25, 25, 0.192),            /* outer white */
+    -10px 0 80px rgba(75, 4, 22, 0.212),        /* outer left magenta */
+    10px 0 80px rgba(0, 255, 255, 0.116);         /* outer right cyan */
+
+    }
+  }
   // padding-top: 20px;
   padding-top: 44px;
   display: flex;
@@ -36,7 +73,8 @@ color: #2B283A;
   }
 
     .place_R {
-      padding-top: 10px;
+      padding: 20px 5px 10px 10px;
+
       .place_info_up {
         display: flex;
         align-items: center;
@@ -70,6 +108,8 @@ color: #2B283A;
       }
 
       .place_info_mid {
+        display: flex;
+        align-items: center;
 padding-bottom: 5px;
 font-family: 'Inter';
 font-style: normal;
@@ -118,6 +158,6 @@ color: #2B283A;
 
   
 }
+}
 
-
-
+}
