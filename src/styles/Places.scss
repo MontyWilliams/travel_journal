@@ -1,11 +1,18 @@
+@import 'utilities';
+
 .containerB {
+  
+  
+  
+  .container{
+    @include video();
+  background-color: aliceblue;
   margin-top: 1rem;
-.container{
   
  
   
 
-    // width: 100%;
+    // width: initial;
     margin-left: auto;
     margin-right: auto;
     // height: 100%;
@@ -32,6 +39,7 @@ color: #2B283A;
 
 
 .place_info {
+  
 
   &:hover {
     .place_img {
@@ -52,6 +60,7 @@ color: #2B283A;
   display: flex;
   
   .place_L {
+    
     padding: 10px;
     justify-content: space-evenly;
 
@@ -66,9 +75,21 @@ color: #2B283A;
   }
 
     .place_R {
+      &:hover {
+        background-color: rgba(240, 248, 255, 0.952);
+        border-radius: 5px;
+        transform: rotate(360deg);
+       
+        transition: 2s, transform 2s,;
+      }
+      &:hover:after {
+        background-color: aqua;
+      }
+ 
       padding: 20px 5px 10px 10px;
 
       .place_info_up {
+        
         display: flex;
         align-items: center;
         img {
@@ -79,7 +100,7 @@ color: #2B283A;
           
         }
         a {
-          width: 319px;
+width: inherit;
 height: 11px;
 left: 184px;
 top: 183px;
