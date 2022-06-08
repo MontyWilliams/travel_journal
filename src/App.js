@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/Places.css';
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import Places from './components/Places'
