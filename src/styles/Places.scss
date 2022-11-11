@@ -2,22 +2,23 @@
 
 .containerB {
 
+  height: 100vh;
 
+  @include video();
 
   .container {
-    @include video();
-    background-color: aliceblue;
-   
+    background-color: rgba(116, 10, 63, 0.103);
+   border: 20px solid rgba(29, 59, 8, 0.315);
 
 
 
 
     margin-left: auto;
     margin-right: auto;
-    // width: initial;
+
 
     // height: 100%;
-    height: inherit;
+    height: fit-content;
     // border: 1px solid #000000;
 
 

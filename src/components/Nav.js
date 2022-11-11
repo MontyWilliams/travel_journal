@@ -1,7 +1,7 @@
 import react from 'react'
 import '../styles/Nav.css'
 import icon from "../images/logo.png"
-import Places from '../components/Places'
+// import Places from '../components/Places'
 
 export default function Nav() {
   return(
